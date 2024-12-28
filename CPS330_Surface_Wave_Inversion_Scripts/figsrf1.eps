@@ -1,0 +1,1111 @@
+%!PS-Adobe-3.0 EPSF-3.0
+%%BoundingBox: (atend)
+%%Creator: plotnps
+%%DocumentNeededResources: (atend)
+%%Pages: (atend)
+%%PageOrder: Ascend
+%%EndComments
+%%BeginProlog
+/ShowEqui 	% HEIGHT NCHAR STRING ShowEqui
+	{
+		% stack is HEIGHT NCHAR STRING
+		dup
+		% stack is HEIGHT NCHAR STRING STRING 
+		stringwidth pop exch
+		% stack is HEIGHT NCHAR XWIDTH STRING
+		4 1 roll
+		% stack is STRING HEIGHT NCHAR XWIDTH
+		exch div   
+		% stack is STRING HEIGHT EXTRA_PER_CHARACTER
+		sub
+		% stack is STRING EXTRAX
+		exch  0 exch  ashow
+	}
+	def
+/plaid {		
+		unit /xmin exch def 	
+		unit /dx exch def 	
+		unit /xmax exch def	
+		unit /ymin exch def 	
+		unit /dy exch def 	
+		unit /ymax exch def	
+		/strn exch def	
+	
+		xmin dx xmax 			% loop over x	
+			{ ymin dy ymax 		% loop over y	
+				{ exch dup 3 2 roll dx dy 4 2 roll	
+					maskit   	
+				} for 	
+				pop 	
+			} for	
+} def	
+	
+	
+/maskit {	
+		1 setgray	
+		gsave	
+		4 copy	
+		translate	
+		scale	
+		6 6 	
+		false	
+		[6 0 0 6 0 0]	
+		strn	
+		imagemask	
+		% return to initial position	
+		4 2 roll	
+		1 exch div exch  1 exch div exch  	
+		scale	
+		neg exch neg exch 	
+		translate	
+		grestore	
+} def	
+/unit { 0.072 mul } def 
+/m { unit exch unit exch moveto } def 
+/n { unit exch unit exch rlineto } def 
+/l { unit exch unit exch lineto } def 
+/sn { stroke newpath } def
+/cgf { closepath gsave  0 setgray fill grestore stroke } def
+1 setlinecap 2 setlinejoin newpath
+%%EndPrologue
+%%Page: 1 1
+%%BeginPageSetup
+%%EndPageSetup
+-1000000 -1000000 m 1000000 -1000000 l 1000000 1000000 l -1000000 1000000 l closepath clip
+gsave
+ newpath
+-1000000 -1000000 m 1000000 -1000000 l 1000000 1000000 l -1000000 1000000 l closepath 
+grestore
+newpath
+0.000 0.000 0.000 setrgbcolor
+newpath
+500 2000 m
+10 unit setlinewidth
+1500 0 n
+0 4000 n
+-1500 0 n
+0 -4000 n
+stroke
+newpath
+500 5600 m
+100 0 n
+stroke
+newpath
+gsave
+-1000000 -1000000 m 1000000 -1000000 l 1000000 1000000 l -1000000 1000000 l closepath clip
+0.000 0.000 0.000 setrgbcolor
+-49 5575 m
+0 rotate
+/Helvetica-Bold findfont
+5.400000 scalefont setfont
+3.600000 10 (     0.001) ShowEqui
+grestore
+0.000 0.000 0.000 setrgbcolor
+newpath
+500 5200 m
+100 0 n
+stroke
+newpath
+gsave
+-1000000 -1000000 m 1000000 -1000000 l 1000000 1000000 l -1000000 1000000 l closepath clip
+0.000 0.000 0.000 setrgbcolor
+-49 5175 m
+0 rotate
+/Helvetica-Bold findfont
+5.400000 scalefont setfont
+3.600000 10 (     0.002) ShowEqui
+grestore
+0.000 0.000 0.000 setrgbcolor
+newpath
+500 4800 m
+100 0 n
+stroke
+newpath
+gsave
+-1000000 -1000000 m 1000000 -1000000 l 1000000 1000000 l -1000000 1000000 l closepath clip
+0.000 0.000 0.000 setrgbcolor
+-49 4774 m
+0 rotate
+/Helvetica-Bold findfont
+5.400000 scalefont setfont
+3.600000 10 (     0.004) ShowEqui
+grestore
+0.000 0.000 0.000 setrgbcolor
+newpath
+500 4400 m
+100 0 n
+stroke
+newpath
+gsave
+-1000000 -1000000 m 1000000 -1000000 l 1000000 1000000 l -1000000 1000000 l closepath clip
+0.000 0.000 0.000 setrgbcolor
+-49 4375 m
+0 rotate
+/Helvetica-Bold findfont
+5.400000 scalefont setfont
+3.600000 10 (     0.005) ShowEqui
+grestore
+0.000 0.000 0.000 setrgbcolor
+newpath
+500 4000 m
+100 0 n
+stroke
+newpath
+gsave
+-1000000 -1000000 m 1000000 -1000000 l 1000000 1000000 l -1000000 1000000 l closepath clip
+0.000 0.000 0.000 setrgbcolor
+-49 3975 m
+0 rotate
+/Helvetica-Bold findfont
+5.400000 scalefont setfont
+3.600000 10 (     0.006) ShowEqui
+grestore
+0.000 0.000 0.000 setrgbcolor
+newpath
+500 3600 m
+100 0 n
+stroke
+newpath
+gsave
+-1000000 -1000000 m 1000000 -1000000 l 1000000 1000000 l -1000000 1000000 l closepath clip
+0.000 0.000 0.000 setrgbcolor
+-49 3574 m
+0 rotate
+/Helvetica-Bold findfont
+5.400000 scalefont setfont
+3.600000 10 (     0.007) ShowEqui
+grestore
+0.000 0.000 0.000 setrgbcolor
+newpath
+500 3200 m
+100 0 n
+stroke
+newpath
+gsave
+-1000000 -1000000 m 1000000 -1000000 l 1000000 1000000 l -1000000 1000000 l closepath clip
+0.000 0.000 0.000 setrgbcolor
+-49 3175 m
+0 rotate
+/Helvetica-Bold findfont
+5.400000 scalefont setfont
+3.600000 10 (     0.008) ShowEqui
+grestore
+0.000 0.000 0.000 setrgbcolor
+newpath
+500 2800 m
+100 0 n
+stroke
+newpath
+gsave
+-1000000 -1000000 m 1000000 -1000000 l 1000000 1000000 l -1000000 1000000 l closepath clip
+0.000 0.000 0.000 setrgbcolor
+-49 2775 m
+0 rotate
+/Helvetica-Bold findfont
+5.400000 scalefont setfont
+3.600000 10 (     0.010) ShowEqui
+grestore
+0.000 0.000 0.000 setrgbcolor
+newpath
+500 2399 m
+100 0 n
+stroke
+newpath
+gsave
+-1000000 -1000000 m 1000000 -1000000 l 1000000 1000000 l -1000000 1000000 l closepath clip
+0.000 0.000 0.000 setrgbcolor
+-49 2374 m
+0 rotate
+/Helvetica-Bold findfont
+5.400000 scalefont setfont
+3.600000 10 (     0.011) ShowEqui
+grestore
+0.000 0.000 0.000 setrgbcolor
+newpath
+gsave
+-1000000 -1000000 m 1000000 -1000000 l 1000000 1000000 l -1000000 1000000 l closepath clip
+0.000 0.000 0.000 setrgbcolor
+150 3650 m
+90 rotate
+/Helvetica-Bold findfont
+7.560000 scalefont setfont
+5.040000 10 (DEPTH \(KM\)) ShowEqui
+grestore
+0.000 0.000 0.000 setrgbcolor
+newpath
+500 6000 m
+1500 0 n
+stroke
+newpath
+509 6000 m
+0 30 n
+stroke
+newpath
+542 6000 m
+0 30 n
+stroke
+newpath
+575 6000 m
+0 30 n
+stroke
+newpath
+608 6000 m
+0 30 n
+stroke
+newpath
+641 6000 m
+0 30 n
+stroke
+newpath
+674 6000 m
+0 48 n
+stroke
+newpath
+708 6000 m
+0 30 n
+stroke
+newpath
+741 6000 m
+0 30 n
+stroke
+newpath
+774 6000 m
+0 30 n
+stroke
+newpath
+807 6000 m
+0 30 n
+stroke
+newpath
+840 6000 m
+0 30 n
+stroke
+newpath
+873 6000 m
+0 30 n
+stroke
+newpath
+906 6000 m
+0 30 n
+stroke
+newpath
+939 6000 m
+0 30 n
+stroke
+newpath
+gsave
+-1000000 -1000000 m 1000000 -1000000 l 1000000 1000000 l -1000000 1000000 l closepath clip
+0.000 0.000 0.000 setrgbcolor
+885 6100 m
+0 rotate
+/Helvetica-Bold findfont
+5.400000 scalefont setfont
+3.600000 5 (0.090) ShowEqui
+grestore
+0.000 0.000 0.000 setrgbcolor
+newpath
+973 6000 m
+0 60 n
+stroke
+newpath
+1006 6000 m
+0 30 n
+stroke
+newpath
+1039 6000 m
+0 30 n
+stroke
+newpath
+1072 6000 m
+0 30 n
+stroke
+newpath
+1105 6000 m
+0 30 n
+stroke
+newpath
+1138 6000 m
+0 30 n
+stroke
+newpath
+1171 6000 m
+0 30 n
+stroke
+newpath
+1204 6000 m
+0 30 n
+stroke
+newpath
+1238 6000 m
+0 30 n
+stroke
+newpath
+1271 6000 m
+0 48 n
+stroke
+newpath
+1304 6000 m
+0 30 n
+stroke
+newpath
+1337 6000 m
+0 30 n
+stroke
+newpath
+1370 6000 m
+0 30 n
+stroke
+newpath
+1403 6000 m
+0 30 n
+stroke
+newpath
+1436 6000 m
+0 30 n
+stroke
+newpath
+1469 6000 m
+0 30 n
+stroke
+newpath
+1503 6000 m
+0 30 n
+stroke
+newpath
+1536 6000 m
+0 30 n
+stroke
+newpath
+gsave
+-1000000 -1000000 m 1000000 -1000000 l 1000000 1000000 l -1000000 1000000 l closepath clip
+0.000 0.000 0.000 setrgbcolor
+1481 6100 m
+0 rotate
+/Helvetica-Bold findfont
+5.400000 scalefont setfont
+3.600000 5 (0.270) ShowEqui
+grestore
+0.000 0.000 0.000 setrgbcolor
+newpath
+1569 6000 m
+0 60 n
+stroke
+newpath
+1602 6000 m
+0 30 n
+stroke
+newpath
+1635 6000 m
+0 30 n
+stroke
+newpath
+1668 6000 m
+0 30 n
+stroke
+newpath
+1701 6000 m
+0 30 n
+stroke
+newpath
+1734 6000 m
+0 30 n
+stroke
+newpath
+1768 6000 m
+0 30 n
+stroke
+newpath
+1801 6000 m
+0 30 n
+stroke
+newpath
+1834 6000 m
+0 30 n
+stroke
+newpath
+1867 6000 m
+0 48 n
+stroke
+newpath
+1900 6000 m
+0 30 n
+stroke
+newpath
+1933 6000 m
+0 30 n
+stroke
+newpath
+1966 6000 m
+0 30 n
+stroke
+newpath
+1999 6000 m
+0 30 n
+stroke
+newpath
+gsave
+-1000000 -1000000 m 1000000 -1000000 l 1000000 1000000 l -1000000 1000000 l closepath clip
+0.000 0.000 0.000 setrgbcolor
+980 6200 m
+0 rotate
+/Helvetica-Bold findfont
+6.480000 scalefont setfont
+4.320000 9 (VS \(KM/S\)) ShowEqui
+grestore
+0.000 0.000 0.000 setrgbcolor
+0.000 0.000 1.000 setrgbcolor
+newpath
+1008 6000 m
+0 -50 n
+stroke
+newpath
+1008 5900 m
+0 -50 n
+stroke
+newpath
+1008 5800 m
+0 -50 n
+stroke
+newpath
+1008 5700 m
+0 -34 n
+17 0 n
+stroke
+newpath
+1037 5629 m
+0 -50 n
+stroke
+newpath
+1037 5529 m
+0 -50 n
+stroke
+newpath
+1037 5429 m
+0 -50 n
+stroke
+newpath
+1041 5333 m
+25 0 n
+0 -25 n
+stroke
+newpath
+1066 5258 m
+0 -50 n
+stroke
+newpath
+1066 5158 m
+0 -50 n
+stroke
+newpath
+1066 5058 m
+0 -50 n
+stroke
+newpath
+1095 4987 m
+0 -50 n
+stroke
+newpath
+1095 4887 m
+0 -50 n
+stroke
+newpath
+1095 4787 m
+0 -50 n
+stroke
+newpath
+1095 4687 m
+0 -21 n
+30 0 n
+0 0 n
+stroke
+newpath
+1125 4616 m
+0 -50 n
+stroke
+newpath
+1125 4516 m
+0 -50 n
+stroke
+newpath
+1125 4416 m
+0 -50 n
+stroke
+newpath
+1141 4333 m
+13 0 n
+0 -38 n
+stroke
+newpath
+1154 4245 m
+0 -50 n
+stroke
+newpath
+1154 4145 m
+0 -50 n
+stroke
+newpath
+1154 4045 m
+0 -45 n
+4 0 n
+stroke
+newpath
+1183 3974 m
+0 -50 n
+stroke
+newpath
+1183 3874 m
+0 -50 n
+stroke
+newpath
+1183 3774 m
+0 -50 n
+stroke
+newpath
+1183 3674 m
+0 -8 n
+29 0 n
+0 -13 n
+stroke
+newpath
+1212 3603 m
+0 -50 n
+stroke
+newpath
+1212 3503 m
+0 -50 n
+stroke
+newpath
+1212 3403 m
+0 -50 n
+stroke
+newpath
+1241 3332 m
+0 -50 n
+stroke
+newpath
+1241 3232 m
+0 -50 n
+stroke
+newpath
+1241 3132 m
+0 -50 n
+stroke
+newpath
+1241 3032 m
+0 -32 n
+17 0 n
+stroke
+newpath
+1270 2962 m
+0 -50 n
+stroke
+newpath
+1270 2862 m
+0 -50 n
+stroke
+newpath
+1270 2762 m
+0 -50 n
+stroke
+newpath
+1275 2666 m
+24 0 n
+0 -25 n
+stroke
+newpath
+1299 2591 m
+0 -50 n
+stroke
+newpath
+1299 2491 m
+0 -50 n
+stroke
+newpath
+1299 2391 m
+0 -50 n
+stroke
+newpath
+1299 2291 m
+0 -50 n
+stroke
+newpath
+1299 2191 m
+0 -50 n
+stroke
+newpath
+1299 2091 m
+0 -50 n
+stroke
+newpath
+1299 1991 m
+0 -25 n
+stroke
+1.000 0.000 0.000 setrgbcolor
+newpath
+914 6000 m
+0 -334 n
+86 0 n
+0 -333 n
+63 0 n
+0 -333 n
+-14 0 n
+0 -334 n
+-55 0 n
+0 -333 n
+27 0 n
+0 -333 n
+69 0 n
+0 -334 n
+30 0 n
+0 -333 n
+-2 0 n
+0 -333 n
+27 0 n
+0 -334 n
+124 0 n
+0 -333 n
+192 0 n
+0 -367 n
+stroke
+1.000 0.000 0.000 setrgbcolor
+newpath
+500 1750 m
+375 0 n
+stroke
+newpath
+gsave
+-1000000 -1000000 m 1000000 -1000000 l 1000000 1000000 l -1000000 1000000 l closepath clip
+1.000 0.000 0.000 setrgbcolor
+950 1750 m
+0 rotate
+/Helvetica-Bold findfont
+10.799999 scalefont setfont
+7.200000 8 ( Current) ShowEqui
+grestore
+1.000 0.000 0.000 setrgbcolor
+0.000 0.000 1.000 setrgbcolor
+newpath
+500 1500 m
+25 0 n
+stroke
+newpath
+575 1500 m
+50 0 n
+stroke
+newpath
+675 1500 m
+50 0 n
+stroke
+newpath
+775 1500 m
+50 0 n
+stroke
+newpath
+gsave
+-1000000 -1000000 m 1000000 -1000000 l 1000000 1000000 l -1000000 1000000 l closepath clip
+0.000 0.000 1.000 setrgbcolor
+950 1500 m
+0 rotate
+/Helvetica-Bold findfont
+10.799999 scalefont setfont
+7.200000 8 ( Initial) ShowEqui
+grestore
+0.000 0.000 1.000 setrgbcolor
+0.000 0.000 0.000 setrgbcolor
+newpath
+2700 1000 m
+6000 0 n
+stroke
+newpath
+3140 1000 m
+0 -100 n
+stroke
+newpath
+3834 1000 m
+0 -100 n
+stroke
+newpath
+4373 1000 m
+0 -130 n
+stroke
+newpath
+4813 1000 m
+0 -100 n
+stroke
+newpath
+5186 1000 m
+0 -100 n
+stroke
+newpath
+5508 1000 m
+0 -100 n
+stroke
+newpath
+5792 1000 m
+0 -100 n
+stroke
+newpath
+gsave
+-1000000 -1000000 m 1000000 -1000000 l 1000000 1000000 l -1000000 1000000 l closepath clip
+0.000 0.000 0.000 setrgbcolor
+5877 700 m
+0 rotate
+/Helvetica-Bold findfont
+10.799999 scalefont setfont
+7.200000 2 (10) ShowEqui
+grestore
+0.000 0.000 0.000 setrgbcolor
+newpath
+gsave
+-1000000 -1000000 m 1000000 -1000000 l 1000000 1000000 l -1000000 1000000 l closepath clip
+0.000 0.000 0.000 setrgbcolor
+6077 770 m
+0 rotate
+/Helvetica-Bold findfont
+7.560000 scalefont setfont
+5.040000 2 (-1) ShowEqui
+grestore
+0.000 0.000 0.000 setrgbcolor
+newpath
+6047 1000 m
+0 -160 n
+stroke
+newpath
+7720 1000 m
+0 -100 n
+stroke
+newpath
+gsave
+-1000000 -1000000 m 1000000 -1000000 l 1000000 1000000 l -1000000 1000000 l closepath clip
+0.000 0.000 0.000 setrgbcolor
+5340 530 m
+0 rotate
+/Helvetica-Bold findfont
+12.960001 scalefont setfont
+8.640000 6 (PERIOD) ShowEqui
+grestore
+0.000 0.000 0.000 setrgbcolor
+newpath
+gsave
+-1000000 -1000000 m 1000000 -1000000 l 1000000 1000000 l -1000000 1000000 l closepath clip
+0.000 0.000 0.000 setrgbcolor
+2600 900 m
+90 rotate
+/Helvetica-Bold findfont
+10.799999 scalefont setfont
+7.200000 4 (0.07) ShowEqui
+grestore
+0.000 0.000 0.000 setrgbcolor
+newpath
+gsave
+-1000000 -1000000 m 1000000 -1000000 l 1000000 1000000 l -1000000 1000000 l closepath clip
+0.000 0.000 0.000 setrgbcolor
+2600 1900 m
+90 rotate
+/Helvetica-Bold findfont
+10.799999 scalefont setfont
+7.200000 4 (0.09) ShowEqui
+grestore
+0.000 0.000 0.000 setrgbcolor
+newpath
+gsave
+-1000000 -1000000 m 1000000 -1000000 l 1000000 1000000 l -1000000 1000000 l closepath clip
+0.000 0.000 0.000 setrgbcolor
+2600 2900 m
+90 rotate
+/Helvetica-Bold findfont
+10.799999 scalefont setfont
+7.200000 4 (0.11) ShowEqui
+grestore
+0.000 0.000 0.000 setrgbcolor
+newpath
+gsave
+-1000000 -1000000 m 1000000 -1000000 l 1000000 1000000 l -1000000 1000000 l closepath clip
+0.000 0.000 0.000 setrgbcolor
+2420 2880 m
+90 rotate
+/Helvetica-Bold findfont
+15.120000 scalefont setfont
+10.080000 16 (VELOCITY \(KM/S\) ) ShowEqui
+grestore
+0.000 0.000 0.000 setrgbcolor
+newpath
+gsave
+-1000000 -1000000 m 1000000 -1000000 l 1000000 1000000 l -1000000 1000000 l closepath clip
+0.000 0.000 0.000 setrgbcolor
+2600 3900 m
+90 rotate
+/Helvetica-Bold findfont
+10.799999 scalefont setfont
+7.200000 4 (0.13) ShowEqui
+grestore
+0.000 0.000 0.000 setrgbcolor
+newpath
+gsave
+-1000000 -1000000 m 1000000 -1000000 l 1000000 1000000 l -1000000 1000000 l closepath clip
+0.000 0.000 0.000 setrgbcolor
+2600 4900 m
+90 rotate
+/Helvetica-Bold findfont
+10.799999 scalefont setfont
+7.200000 4 (0.15) ShowEqui
+grestore
+0.000 0.000 0.000 setrgbcolor
+newpath
+gsave
+-1000000 -1000000 m 1000000 -1000000 l 1000000 1000000 l -1000000 1000000 l closepath clip
+0.000 0.000 0.000 setrgbcolor
+2600 5900 m
+90 rotate
+/Helvetica-Bold findfont
+10.799999 scalefont setfont
+7.200000 4 (0.18) ShowEqui
+grestore
+0.000 0.000 0.000 setrgbcolor
+newpath
+gsave
+-1000000 -1000000 m 1000000 -1000000 l 1000000 1000000 l -1000000 1000000 l closepath clip
+0.000 0.000 0.000 setrgbcolor
+2600 6900 m
+90 rotate
+/Helvetica-Bold findfont
+10.799999 scalefont setfont
+7.200000 4 (0.20) ShowEqui
+grestore
+0.000 0.000 0.000 setrgbcolor
+newpath
+2700 7000 m
+0 0 n
+-70 0 n
+70 0 n
+0 -1000 n
+-70 0 n
+70 0 n
+0 -1000 n
+-70 0 n
+70 0 n
+0 -1000 n
+-70 0 n
+70 0 n
+0 -1000 n
+-70 0 n
+70 0 n
+0 -1000 n
+-70 0 n
+70 0 n
+0 -1000 n
+-70 0 n
+70 0 n
+stroke
+newpath
+gsave
+-1000000 -1000000 m 1000000 -1000000 l 1000000 1000000 l -1000000 1000000 l closepath clip
+0.000 0.000 0.000 setrgbcolor
+3200 7100 m
+0 rotate
+/Helvetica-Bold findfont
+10.799999 scalefont setfont
+7.200000 8 (RAYLEIGH) ShowEqui
+grestore
+0.000 0.000 0.000 setrgbcolor
+0.000 0.000 0.000 setrgbcolor
+0.000 0.000 0.000 setrgbcolor
+0.000 0.000 0.000 setrgbcolor
+newpath
+2747 1026 m
+0 25 n
+-13 0 n
+-12 -13 n
+0 -25 n
+12 -12 n
+25 0 n
+13 12 n
+0 25 n
+-13 13 n
+-12 0 n
+0 -25 n
+stroke
+0.000 0.000 0.000 setrgbcolor
+0.000 0.000 0.000 setrgbcolor
+newpath
+3031 1533 m
+0 25 n
+-13 0 n
+-12 -13 n
+0 -25 n
+12 -12 n
+25 0 n
+13 12 n
+0 25 n
+-13 13 n
+-12 0 n
+0 -25 n
+stroke
+0.000 0.000 0.000 setrgbcolor
+0.000 0.000 0.000 setrgbcolor
+newpath
+3409 1604 m
+0 25 n
+-13 0 n
+-12 -13 n
+0 -25 n
+12 -12 n
+25 0 n
+13 12 n
+0 25 n
+-13 13 n
+-12 0 n
+0 -25 n
+stroke
+0.000 0.000 0.000 setrgbcolor
+0.000 0.000 0.000 setrgbcolor
+newpath
+3814 1622 m
+0 25 n
+-13 0 n
+-12 -13 n
+0 -25 n
+12 -12 n
+25 0 n
+13 12 n
+0 25 n
+-13 13 n
+-12 0 n
+0 -25 n
+stroke
+0.000 0.000 0.000 setrgbcolor
+0.000 0.000 0.000 setrgbcolor
+newpath
+4265 1711 m
+0 25 n
+-13 0 n
+-12 -13 n
+0 -25 n
+12 -12 n
+25 0 n
+13 12 n
+0 25 n
+-13 13 n
+-12 0 n
+0 -25 n
+stroke
+0.000 0.000 0.000 setrgbcolor
+0.000 0.000 0.000 setrgbcolor
+newpath
+4752 2093 m
+0 25 n
+-13 0 n
+-12 -13 n
+0 -25 n
+12 -12 n
+25 0 n
+13 12 n
+0 25 n
+-13 13 n
+-12 0 n
+0 -25 n
+stroke
+0.000 0.000 0.000 setrgbcolor
+0.000 0.000 0.000 setrgbcolor
+newpath
+5710 2075 m
+0 25 n
+-13 0 n
+-12 -13 n
+0 -25 n
+12 -12 n
+25 0 n
+13 12 n
+0 25 n
+-13 13 n
+-12 0 n
+0 -25 n
+stroke
+0.000 0.000 0.000 setrgbcolor
+0.000 0.000 0.000 setrgbcolor
+newpath
+6869 1946 m
+0 25 n
+-13 0 n
+-12 -13 n
+0 -25 n
+12 -12 n
+25 0 n
+13 12 n
+0 25 n
+-13 13 n
+-12 0 n
+0 -25 n
+stroke
+0.000 0.000 0.000 setrgbcolor
+0.000 0.000 0.000 setrgbcolor
+newpath
+7667 2093 m
+0 25 n
+-13 0 n
+-12 -13 n
+0 -25 n
+12 -12 n
+25 0 n
+13 12 n
+0 25 n
+-13 13 n
+-12 0 n
+0 -25 n
+stroke
+0.000 0.000 0.000 setrgbcolor
+0.000 0.000 0.000 setrgbcolor
+newpath
+7995 3626 m
+0 25 n
+-13 0 n
+-12 -13 n
+0 -25 n
+12 -12 n
+25 0 n
+13 12 n
+0 25 n
+-13 13 n
+-12 0 n
+0 -25 n
+stroke
+0.000 0.000 0.000 setrgbcolor
+0.000 0.000 0.000 setrgbcolor
+newpath
+8290 6493 m
+0 25 n
+-13 0 n
+-12 -13 n
+0 -25 n
+12 -12 n
+25 0 n
+13 12 n
+0 25 n
+-13 13 n
+-12 0 n
+0 -25 n
+stroke
+0.000 0.000 0.000 setrgbcolor
+0.000 0.000 0.000 setrgbcolor
+1.000 0.000 0.000 setrgbcolor
+newpath
+2747 1227 m
+284 81 n
+378 146 n
+405 198 n
+451 231 n
+487 185 n
+958 181 n
+1159 447 n
+798 1350 n
+328 880 n
+295 544 n
+stroke
+0.000 0.000 0.000 setrgbcolor
+0.000 0.000 0.000 setrgbcolor
+showpage
+%%Trailer
+%%Pages: 1
+%%DocumentNeededResources: font /Helvetica-Bold
+%%BoundingBox: -12 24 635 534
+%%EOF
