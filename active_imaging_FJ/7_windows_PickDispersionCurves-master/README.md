@@ -1,1 +1,0 @@
-# A simple python GUI for extracting dispersion curves from dispersion spectrum.
