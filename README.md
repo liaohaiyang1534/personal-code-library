@@ -58,10 +58,3 @@ A comprehensive toolkit for processing **sweep signals** in SEG-Y files. Include
 > Detailed documentation for this folder is available in its own `README.md`.
 
 ---
-
-## How to Use
-
-1. Clone this repository to your local machine:
-   ```bash
-   git clone <repository_url>
-   cd personal-code-library
