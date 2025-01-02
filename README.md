@@ -1,5 +1,3 @@
-
-
 # Personal Code Library
 
 This repository serves as a comprehensive collection of Python scripts and tools for seismic data processing, inversion, and imaging. Each subfolder represents a distinct workflow or set of utilities designed for specific tasks in seismic data analysis.
