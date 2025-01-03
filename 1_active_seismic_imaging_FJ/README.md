@@ -6,18 +6,18 @@ This repository contains scripts, tools, and data processing workflows for activ
 
 ## Folder Structure
 
-### 1. `1_extract_specific_traces`
+### `1_extract_specific_traces`
 This folder contains scripts for extracting specific traces from SEG-Y files.
 
 - **`batch_extract_specific_traces.py`**  
-  This script processes a folder containing `.sgy` files and extracts specific traces using predefined parameter ranges.
+  Processes a folder containing `.sgy` files and extracts specific traces using predefined parameter ranges.
 
 - **`extract_specific_traces.py`**  
   Extracts a specified range of traces from a single `.sgy` file and saves the result as a new `.sgy` file.
 
 ---
 
-### 2. `2_STALTA`
+### `2_STALTA`
 This folder contains scripts and modules for implementing STA/LTA (Short-Term Average over Long-Term Average) seismic signal analysis.
 
 - **`config.json`**  
@@ -40,7 +40,7 @@ This folder contains scripts and modules for implementing STA/LTA (Short-Term Av
 
 ---
 
-### 3. `3_shot_time_match`
+### `3_shot_time_match`
 This folder focuses on matching shot times and processing related to shot metadata.
 
 - **`batch_shot_time_match.py`**  
@@ -51,7 +51,7 @@ This folder focuses on matching shot times and processing related to shot metada
 
 ---
 
-### 4. `4_shot_center`
+### `4_shot_center`
 This folder contains scripts for splitting SEG-Y files into parts based on shot centers.
 
 - **`batch_split_sgy.py`**  
@@ -62,7 +62,7 @@ This folder contains scripts for splitting SEG-Y files into parts based on shot 
 
 ---
 
-### 5. `5_bandpass`
+### `5_bandpass`
 This folder provides scripts for applying bandpass filters to SEG-Y files and analyzing their frequency spectra.
 
 - **`bandpass_sgy.py`**  
@@ -76,7 +76,7 @@ This folder provides scripts for applying bandpass filters to SEG-Y files and an
 
 ---
 
-### 6. `6_single_sgy_FJs`
+### `6_single_sgy_FJs`
 This folder contains scripts for advanced processing of single SEG-Y files, including SAC file conversion, array length picking, and trace spacing adjustments.
 
 - **`FJ_single_processing_sacs_to_pic.py`**  
@@ -112,7 +112,7 @@ This folder contains scripts for advanced processing of single SEG-Y files, incl
 
 ---
 
-### 7. `7_pick_curve`
+### `7_pick_curve`
 This folder is dedicated to picking dispersion curves from processed data.
 
 - **`pick_dispersion_curves_active_imaging_FJ.py`**  
@@ -143,6 +143,3 @@ This folder is dedicated to picking dispersion curves from processed data.
 
 ## Contributing
 Contributions are welcome! Please fork the repository and submit a pull request with your changes.
-
-## License
-This project is licensed under the MIT License. See the `LICENSE` file for details.
