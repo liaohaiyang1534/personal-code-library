@@ -1,44 +1,50 @@
-# Active Seismic Imaging using frequency-Bessel method
+# Active Seismic Imaging using Frequency-Bessel Method
 
-This repository contains scripts and tools for active seismic imaging, including trace extraction, STA/LTA processing, shot center splitting, bandpass filtering, and dispersion curve picking.
+This repository contains scripts for active seismic imaging using Distributed Acoustic Sensing (DAS) and the CC-FJpy package (https://github.com/ColinLii/CC-FJpy).
 
-this repository contains scripts for active seismic imaging using distributed acoustic sensing (DAS) and the CC-FJpy package.
-when we implement the experiment, first we make sure the fiber-optic cables are ready, including tap tests; second, we use active sources, such as hammer or other sources, to make surface waves signals along the fiber-optic cable with your own shot offset. and remember to record your shot number and their time; thirdly, 
+## Experimental Setup
+
+1. **Fiber-optic cables preparation**: Ensure fiber-optic cables are ready and perform tap tests.
+2. **Active sources**: Use active sources (e.g., hammer or other sources) to create surface wave signals along the fiber-optic cable, with your own shot offsets.
+3. **Record shot information**: Note the shot number and the time of each shot.
+4. **Data conversion**: Convert `.dat` files to `.sgy` file format.
+5. **Data processing**: Follow the data processing workflow to quickly process data from active source experiments.
 
 ## Data Processing Workflow
-1. Extract traces (`1_extract_specific_traces`).
-2. Perform STA/LTA analysis to get shot signal and their time (`2_STALTA`).
-3. Match shot times to make shot number and shot signal match (`3_shot_time_match`).
-4. Split SEG-Y files: split them depending on the center shot trace(`4_shot_center`).
-5. Apply bandpass filters (`5_bandpass`).
-6. Process single SEG-Y files for dispersion analysis (`6_single_sgy_FJs`).
-7. Pick dispersion curves (`7_pick_curve`).
+
+1. **Extract traces**: `1_extract_specific_traces`
+2. **STA/LTA analysis**: Detect shot signals and their timings (`2_STALTA`).
+3. **Match shot times**: Ensure shot numbers and signals match (`3_shot_time_match`).
+4. **Split SEG-Y files**: Split the files based on the center shot trace (`4_shot_center`).
+5. **Apply bandpass filters**: Filter the data (`5_bandpass`).
+6. **Dispersion analysis**: Process single SEG-Y files for dispersion analysis (`6_single_sgy_FJs`).
+7. **Pick dispersion curves**: Manually or automatically pick dispersion curves (`7_pick_curve`).
 
 ## Folder Structure
 
 ### `1_extract_specific_traces`
-- **`batch_extract_specific_traces.py`**: input is a folder, get sgy files information and send to `extract_specific_traces.py`
+- **`batch_extract_specific_traces.py`**: Takes a folder as input, retrieves SEG-Y file information, and passes it to `extract_specific_traces.py`.
 - **`extract_specific_traces.py`**: Extracts a range of traces from a single `.sgy` file.
 
 ### `2_STALTA`
-- **`config.json`**: Configuration for STA/LTA processing.
+- **`config.json`**: Configuration file for STA/LTA processing.
 - **`main.py`**: Main script for STA/LTA processing.
 - **`shot_time_match_module.py`**: Matches shot times to a reference timestamp.
-- **`stalta_module.py`**: Detects trigger events using STA/LTA.
+- **`stalta_module.py`**: Detects trigger events using STA/LTA analysis.
 - **`total_energy_module.py`**: Calculates total energy of seismic traces.
 - **`utils.py`**: Utility functions (e.g., logging, SEG-Y file listing).
 
 ### `3_shot_time_match`
-- **`batch_shot_time_match.py`**: input is a folder, get files information and send to 'shot_time_match.py`
+- **`batch_shot_time_match.py`**: Takes a folder as input, retrieves files information, and passes it to `shot_time_match.py`.
 - **`shot_time_match.py`**: Matches shot times in a single SEG-Y file.
 
 ### `4_shot_center`
-- **`batch_split_sgy.py`**: input is a folder, get files information and send to 'split_sgy.py`
-- **`split_sgy.py`**: Splits a single SEG-Y file based on a specified index.
+- **`batch_split_sgy.py`**: Takes a folder as input, retrieves SEG-Y file information, and passes it to `split_sgy.py`.
+- **`split_sgy.py`**: Splits a single SEG-Y file based on a specified index (center shot trace).
 
 ### `5_bandpass`
 - **`bandpass_sgy.py`**: Applies a bandpass filter to a single SEG-Y file.
-- **`batch_bandpass_sgy.py`**: input is a folder, get sgy files information and send to 'bandpass_sgy.py`
+- **`batch_bandpass_sgy.py`**: Takes a folder as input, retrieves SEG-Y file information, and passes it to `bandpass_sgy.py`.
 - **`plot_sgy_frequency.py`**: Plots the frequency spectrum of SEG-Y files.
 
 ### `6_single_sgy_FJs`
@@ -53,4 +59,4 @@ when we implement the experiment, first we make sure the fiber-optic cables are 
 
 ### `7_pick_curve`
 - **`pick_dispersion_curves_active_imaging_FJ.py`**: GUI tool for manually picking dispersion curves from `.h5` files.
-- **`batch_pick_dispersion_curves_active_imaging_FJ.py`**: input is a folder, get files information and send to 'pick_dispersion_curves_active_imaging_FJ.py`
+- **`batch_pick_dispersion_curves_active_imaging_FJ.py`**: Takes a folder as input, retrieves files information, and passes it to `pick_dispersion_curves_active_imaging_FJ.py`.
