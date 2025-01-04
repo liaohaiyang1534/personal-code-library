@@ -1,3 +1,13 @@
+# -*- encoding: utf-8 -*-
+'''
+@File        :   5_txt_adjustedtocps.py
+@Time        :   2025/01/03 22:40:40
+@Author      :   Haiyang Liao
+@Affiliation :   Nanjing University (NJU)
+@Contact     :   haiyangliao@smail.nju.edu.cn
+'''
+
+
 import os
 import pandas as pd
 import sys

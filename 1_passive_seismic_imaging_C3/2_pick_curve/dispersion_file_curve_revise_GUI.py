@@ -1,3 +1,13 @@
+# -*- encoding: utf-8 -*-
+'''
+@File        :   dispersion_file_curve_revise_GUI.py
+@Time        :   2025/01/03 22:37:29
+@Author      :   Haiyang Liao
+@Affiliation :   Nanjing University (NJU)
+@Contact     :   haiyangliao@smail.nju.edu.cn
+'''
+
+
 import sys
 import numpy as np
 import os

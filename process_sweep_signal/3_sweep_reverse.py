@@ -1,3 +1,13 @@
+# -*- encoding: utf-8 -*-
+'''
+@File        :   3_sweep_reverse.py
+@Time        :   2025/01/03 22:51:49
+@Author      :   Haiyang Liao
+@Affiliation :   Nanjing University (NJU)
+@Contact     :   haiyangliao@smail.nju.edu.cn
+'''
+
+
 import segyio
 import os
 import sys

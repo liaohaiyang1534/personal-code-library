@@ -1,3 +1,13 @@
+# -*- encoding: utf-8 -*-
+'''
+@File        :   2_add_x_location.py
+@Time        :   2025/01/03 22:42:20
+@Author      :   Haiyang Liao
+@Affiliation :   Nanjing University (NJU)
+@Contact     :   haiyangliao@smail.nju.edu.cn
+'''
+
+
 import os
 import glob
 import re

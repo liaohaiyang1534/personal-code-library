@@ -1,5 +1,15 @@
 #!/bin/bash
 
+# -*- encoding: utf-8 -*-
+'''
+@File        :   single_batch_processing_attack.sh
+@Time        :   2025/01/03 22:35:11
+@Author      :   Haiyang Liao
+@Affiliation :   Nanjing University (NJU)
+@Contact     :   haiyangliao@smail.nju.edu.cn
+'''
+
+
 # Define an array of target directories
 TARGET_DIRS=(
   # Add more directories here

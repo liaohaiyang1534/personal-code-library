@@ -1,3 +1,21 @@
+# -*- encoding: utf-8 -*-
+'''
+@File        :   noise_dispersion_from_noise_sacs_to_CCF_FJpng_h5_20241004.py
+@Time        :   2025/01/03 22:37:36
+@Author      :   Haiyang Liao
+@Affiliation :   Nanjing University (NJU)
+@Contact     :   haiyangliao@smail.nju.edu.cn
+@Description :   Script for processing dispersion using CC-FJpy, adapted from ColinLii's work
+                 available at: https://github.com/ColinLii/CC-FJpy
+
+This script utilizes the CC-FJpy package developed by ColinLii.
+For more information, please visit: https://github.com/ColinLii/CC-FJpy
+The package is licensed under the MIT License, and this script is for personal use only.
+'''
+
+import ccfj
+from ccfj import CC, GetStationPairs
+
 import os
 import shutil
 import obspy
@@ -9,8 +27,6 @@ matplotlib.use('agg')
 import matplotlib.pyplot as plt
 import re
 from obspy import UTCDateTime
-import ccfj
-from ccfj import CC, GetStationPairs
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from geopy.distance import great_circle
 from tqdm import tqdm
@@ -301,6 +317,8 @@ for idx, path in enumerate(no_arrange_file_path_list):
 
             StationPairs = GetStationPairs(nsta)
             nPairs = int(len(StationPairs) / 2)
+
+            # Perform CC calculation using the CC-FJpy package
             ncfs = CC(npts, nsta, nf, fft_length, StationPairs, startend, data, 
                       fstride=fstride, overlaprate=overlap_rate, nThreads=nThreads, 
                       ifonebit=0, ifspecwhittenning=1)
@@ -420,6 +438,8 @@ for idx, path in enumerate(no_arrange_file_path_list):
             f = data['f']
 
             disp_start_time = time.time()
+
+            # Perform FJ transformation using the CC-FJpy package to analyze phase velocity dispersion
             ds10 = ccfj.fj_noise(np.real(ncfs), r, c, f, fstride, itype=0, func=1)
             disp_end_time = time.time()
             time_records['extract_dispersion'] = disp_end_time - disp_start_time

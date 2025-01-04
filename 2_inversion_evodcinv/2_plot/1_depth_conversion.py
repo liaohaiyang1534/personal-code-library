@@ -1,3 +1,13 @@
+# -*- encoding: utf-8 -*-
+'''
+@File        :   1_depth_conversion.py
+@Time        :   2025/01/03 22:42:15
+@Author      :   Haiyang Liao
+@Affiliation :   Nanjing University (NJU)
+@Contact     :   haiyangliao@smail.nju.edu.cn
+'''
+
+
 import os
 import sys
 

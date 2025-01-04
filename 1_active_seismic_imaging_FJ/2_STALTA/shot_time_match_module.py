@@ -1,3 +1,13 @@
+# -*- encoding: utf-8 -*-
+'''
+@File        :   shot_time_match_module.py
+@Time        :   2025/01/03 22:31:02
+@Author      :   Haiyang Liao
+@Affiliation :   Nanjing University (NJU)
+@Contact     :   haiyangliao@smail.nju.edu.cn
+'''
+
+
 import os
 import shutil
 from datetime import datetime, timedelta

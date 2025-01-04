@@ -1,3 +1,13 @@
+# -*- encoding: utf-8 -*-
+'''
+@File        :   pick_diff_trace_spacing.py
+@Time        :   2025/01/03 22:34:55
+@Author      :   Haiyang Liao
+@Affiliation :   Nanjing University (NJU)
+@Contact     :   haiyangliao@smail.nju.edu.cn
+'''
+
+
 import sys
 
 # Print the path to the current Python executable

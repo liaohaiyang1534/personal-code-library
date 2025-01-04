@@ -1,3 +1,13 @@
+# -*- encoding: utf-8 -*-
+'''
+@File        :   extra_specific_time_and_trace_of_sgy.py
+@Time        :   2025/01/03 22:45:26
+@Author      :   Haiyang Liao
+@Affiliation :   Nanjing University (NJU)
+@Contact     :   haiyangliao@smail.nju.edu.cn
+'''
+
+
 import segyio
 import matplotlib.pyplot as plt
 import numpy as np

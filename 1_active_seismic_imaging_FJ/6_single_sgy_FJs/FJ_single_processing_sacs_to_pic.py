@@ -1,3 +1,20 @@
+# -*- encoding: utf-8 -*-
+'''
+@File        :   FJ_single_processing_sacs_to_pic.py
+@Time        :   2025/01/03 22:34:08
+@Author      :   Haiyang Liao
+@Affiliation :   Nanjing University (NJU)
+@Contact     :   haiyangliao@smail.nju.edu.cn
+@Description :   Script for processing dispersion using CC-FJpy, adapted from ColinLii's work
+                 available at: https://github.com/ColinLii/CC-FJpy
+
+This script utilizes the CC-FJpy package developed by ColinLii.
+For more information, please visit: https://github.com/ColinLii/CC-FJpy
+The package is licensed under the MIT License, and this script is for personal use only.
+'''
+
+import ccfj
+
 print("Starting execution...")
 import matplotlib
 matplotlib.use('Agg')  # Use Agg backend
@@ -5,7 +22,6 @@ import os
 from matplotlib import pyplot as plt
 import obspy
 import numpy as np
-import ccfj
 import sys
 import h5py
 
@@ -54,6 +70,7 @@ r = r[indx] * 1000
 winl = winl[:, indx]
 winr = winr[:, indx]
 
+# Perform FJ transformation using the CC-FJpy package to analyze phase velocity dispersion
 print("Performing FJ transformation...")
 out1 = ccfj.MWFJ(u0, r, c, f, Fs, nwin, winl, winr, func=1)
 

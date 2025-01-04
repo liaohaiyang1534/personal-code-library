@@ -1,3 +1,13 @@
+# -*- encoding: utf-8 -*-
+'''
+@File        :   6_txt_plot.py
+@Time        :   2025/01/03 22:40:45
+@Author      :   Haiyang Liao
+@Affiliation :   Nanjing University (NJU)
+@Contact     :   haiyangliao@smail.nju.edu.cn
+'''
+
+
 import numpy as np
 import matplotlib.pyplot as plt
 from scipy.interpolate import griddata

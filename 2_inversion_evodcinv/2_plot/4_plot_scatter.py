@@ -1,3 +1,13 @@
+# -*- encoding: utf-8 -*-
+'''
+@File        :   4_plot_scatter.py
+@Time        :   2025/01/03 22:42:28
+@Author      :   Haiyang Liao
+@Affiliation :   Nanjing University (NJU)
+@Contact     :   haiyangliao@smail.nju.edu.cn
+'''
+
+
 import numpy as np
 import matplotlib.pyplot as plt
 from sklearn.neighbors import KDTree

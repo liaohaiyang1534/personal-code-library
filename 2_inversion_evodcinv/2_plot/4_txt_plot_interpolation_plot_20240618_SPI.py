@@ -1,3 +1,13 @@
+# -*- encoding: utf-8 -*-
+'''
+@File        :   4_txt_plot_interpolation_plot_20240618_SPI.py
+@Time        :   2025/01/03 22:42:38
+@Author      :   Haiyang Liao
+@Affiliation :   Nanjing University (NJU)
+@Contact     :   haiyangliao@smail.nju.edu.cn
+'''
+
+
 import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib.colors import Normalize

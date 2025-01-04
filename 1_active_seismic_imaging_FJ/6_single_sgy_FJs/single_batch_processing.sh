@@ -1,5 +1,15 @@
 #!/bin/bash
 
+# -*- encoding: utf-8 -*-
+'''
+@File        :   single_batch_processing.sh
+@Time        :   2025/01/03 22:35:16
+@Author      :   Haiyang Liao
+@Affiliation :   Nanjing University (NJU)
+@Contact     :   haiyangliao@smail.nju.edu.cn
+'''
+
+
 # Define an array of target directories
 TARGET_DIRS=(
   # "/mnt/h/termite/temple/shots_263_393_split_removebad_shottimematch_right"

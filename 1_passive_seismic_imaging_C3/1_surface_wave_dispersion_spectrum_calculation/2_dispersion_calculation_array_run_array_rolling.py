@@ -1,41 +1,37 @@
-# ----------------------------------------------------------------------------------
-# PYTHON SCRIPT: python /mnt/h/CODE/ambient_noise_dispersion_C3/dispersion_calculation/rolling/2_dispersion_calculation_array_run_array_rolling.py
-# ----------------------------------------------------------------------------------
+# -*- encoding: utf-8 -*-
+'''
+@File        :   2_dispersion_calculation_array_run_array_rolling.py
+@Time        :   2025/01/03 22:37:10
+@Author      :   Haiyang Liao
+@Affiliation :   Nanjing University (NJU)
+@Contact     :   haiyangliao@smail.nju.edu.cn
+'''
 
-# ----------------------------------------------------------------------------------
-# Importing libraries
-# ----------------------------------------------------------------------------------
 import subprocess
 import os
 import sys
 from tqdm import tqdm
 
-# ----------------------------------------------------------------------------------
-# Setting parameters
-# ----------------------------------------------------------------------------------
 data_dir = sys.argv[3]
 upper_dir = os.path.dirname(os.path.dirname(data_dir))
 inputfolder_name = os.path.basename(os.path.dirname(data_dir))
 
-# Output directory
+# Output directory, set output folder's name
 result_dir = os.path.join(upper_dir, "RESULTS_LHY_20241201_whole_line1_rolling_8_12marray")
 
 start_file_number = sys.argv[1]
 end_file_number = sys.argv[2]
 
-# Channel range
+# survey line start channel number and end channel number
 line_start = 90  # Channel start
 line_end = 203  # Channel end
 
 # Parameters
 spacing = 0.5  # Channel spacing in meters
 array_length = 12  # Array length in meters
-array_interval = 0.5  # Rolling distance in meters
+array_interval = 0.5  # Rolling distance in meters, that means, when we move the array, the distance that the array moves
 channel_number = array_length / spacing
 
-# ----------------------------------------------------------------------------------
-# Directory structure for results
-# ----------------------------------------------------------------------------------
 current_directory = os.path.dirname(os.path.abspath(__file__))
 script_path = os.path.join(current_directory, "1_dispersion_calculation_array_run.py")
 
@@ -69,9 +65,6 @@ os.makedirs(curve_C2_dir, exist_ok=True)
 os.makedirs(curve_C3_dir, exist_ok=True)
 os.makedirs(curve_ccfj_dir, exist_ok=True)
 
-# ----------------------------------------------------------------------------------
-# Running the script
-# ----------------------------------------------------------------------------------
 step_size = int(array_interval / spacing)
 
 # Loop through the arrays
@@ -107,7 +100,3 @@ for array_start in tqdm(range(line_start, line_end, step_size), desc="Processing
         print("Script ran successfully!")
     except subprocess.CalledProcessError as e:
         print(f"An error occurred while running the script: {e}")
-
-# ----------------------------------------------------------------------------------
-# THE END
-# ----------------------------------------------------------------------------------

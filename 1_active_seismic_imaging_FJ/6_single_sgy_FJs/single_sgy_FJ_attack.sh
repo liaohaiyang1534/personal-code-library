@@ -1,5 +1,15 @@
 #!/bin/bash
 
+# -*- encoding: utf-8 -*-
+'''
+@File        :   single_sgy_FJ_attack.sh
+@Time        :   2025/01/03 22:35:21
+@Author      :   Haiyang Liao
+@Affiliation :   Nanjing University (NJU)
+@Contact     :   haiyangliao@smail.nju.edu.cn
+'''
+
+
 # SGY file path
 sgy_file_path=$1
 

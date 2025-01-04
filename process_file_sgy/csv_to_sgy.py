@@ -1,3 +1,13 @@
+# -*- encoding: utf-8 -*-
+'''
+@File        :   csv_to_sgy.py
+@Time        :   2025/01/03 22:45:21
+@Author      :   Haiyang Liao
+@Affiliation :   Nanjing University (NJU)
+@Contact     :   haiyangliao@smail.nju.edu.cn
+'''
+
+
 from segpy.dataset import Dataset
 from segpy.binary_reel_header import BinaryReelHeader
 from segpy.field_types import Int32

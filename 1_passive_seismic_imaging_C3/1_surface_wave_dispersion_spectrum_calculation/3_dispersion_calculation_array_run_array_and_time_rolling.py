@@ -1,18 +1,16 @@
-# ----------------------------------------------------------------------------------
-# PYTHON SCRIPT: 3_dispersion_calculation_array_run_array_and_time_rolling.py
-# ----------------------------------------------------------------------------------
+# -*- encoding: utf-8 -*-
+'''
+@File        :   3_dispersion_calculation_array_run_array_and_time_rolling.py
+@Time        :   2025/01/03 22:37:18
+@Author      :   Haiyang Liao
+@Affiliation :   Nanjing University (NJU)
+@Contact     :   haiyangliao@smail.nju.edu.cn
+'''
 
-# ----------------------------------------------------------------------------------
-# Importing libraries
-# ----------------------------------------------------------------------------------
 import subprocess
 import os
 
-# ----------------------------------------------------------------------------------
-# Setting parameters
-# ----------------------------------------------------------------------------------
-
-# Define the directories containing the data files
+# Directories containing the data files to be processed
 directories = [
     "/mnt/i/diff_dis_to_cavity/2024-06-28_sgy/",
     # "/mnt/i/diff_dis_to_cavity/2024-06-29_sgy/",
@@ -24,32 +22,24 @@ directories = [
     # "/mnt/i/diff_dis_to_cavity/2024-07-05_sgy/",
 ]
 
-# Define file number pairs (start and end)
+# File number pairs for processing (e.g., '60x20' to '60x22' represents files from 20:00 to 22:00)
 file_number_pairs = [
     ('60x20', '60x22'),
 ]
 
-# ----------------------------------------------------------------------------------
-# Running the script
-# ----------------------------------------------------------------------------------
-
 # Get the current directory of the script
 current_directory = os.path.dirname(os.path.abspath(__file__))
 
-# Define the script path relative to the current directory
+# Define the relative path to the script for dispersion calculation
 script_path = os.path.join(current_directory, "2_dispersion_calculation_array_run_array_rolling.py")
 
-# Iterate through directories and file number pairs
+# Iterate through each directory and file number pair for processing
 for directory in directories:
     for start_file_number, end_file_number in file_number_pairs:
         command = ["python3", script_path, start_file_number, end_file_number, directory]
         try:
-            print(f"Processing {start_file_number} to {end_file_number} in directory {directory}")
+            print(f"Processing files from {start_file_number} to {end_file_number} in directory {directory}")
             subprocess.run(command, check=True, cwd=directory)
-            print(f"Completed processing {start_file_number} to {end_file_number} in directory {directory}")
+            print(f"Completed processing files from {start_file_number} to {end_file_number} in directory {directory}")
         except subprocess.CalledProcessError as e:
-            print(f"An error occurred while processing files from {start_file_number} to {end_file_number} in directory {directory}: {e}")
-
-# ----------------------------------------------------------------------------------
-# THE END
-# ----------------------------------------------------------------------------------
+            print(f"Error occurred while processing files from {start_file_number} to {end_file_number} in directory {directory}: {e}")

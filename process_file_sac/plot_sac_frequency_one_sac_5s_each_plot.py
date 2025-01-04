@@ -1,3 +1,13 @@
+# -*- encoding: utf-8 -*-
+'''
+@File        :   plot_sac_frequency_one_sac_5s_each_plot.py
+@Time        :   2025/01/03 22:43:41
+@Author      :   Haiyang Liao
+@Affiliation :   Nanjing University (NJU)
+@Contact     :   haiyangliao@smail.nju.edu.cn
+'''
+
+
 import numpy as np
 import matplotlib.pyplot as plt
 import obspy

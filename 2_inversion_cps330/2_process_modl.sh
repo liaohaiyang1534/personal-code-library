@@ -1,5 +1,15 @@
 #!/bin/bash
 
+# -*- encoding: utf-8 -*-
+'''
+@File        :   2_process_modl.sh
+@Time        :   2025/01/03 22:38:17
+@Author      :   Haiyang Liao
+@Affiliation :   Nanjing University (NJU)
+@Contact     :   haiyangliao@smail.nju.edu.cn
+'''
+
+
 # The initial model is important and can be manually set here. Currently, there are 5 ways to set the initial model:
 # 1. Uniform model where all layers have the same velocity.
 # 2. Velocity gradient model with user-defined min and max velocity.

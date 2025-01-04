@@ -1,3 +1,13 @@
+# -*- encoding: utf-8 -*-
+'''
+@File        :   plot_multi_sacs.py
+@Time        :   2025/01/03 22:43:32
+@Author      :   Haiyang Liao
+@Affiliation :   Nanjing University (NJU)
+@Contact     :   haiyangliao@smail.nju.edu.cn
+'''
+
+
 import os
 from obspy import read
 import matplotlib.pyplot as plt

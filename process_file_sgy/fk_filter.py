@@ -1,3 +1,12 @@
+# -*- encoding: utf-8 -*-
+'''
+@File        :   fk_filter.py
+@Time        :   2025/01/03 22:49:36
+@Author      :   Haiyang Liao
+@Affiliation :   Nanjing University (NJU)
+@Contact     :   haiyangliao@smail.nju.edu.cn
+'''
+
 import numpy as np
 import segyio
 from scipy.fftpack import fft2, ifft2, fftshift, ifftshift

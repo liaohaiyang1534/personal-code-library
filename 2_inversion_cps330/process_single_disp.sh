@@ -1,5 +1,16 @@
 #!/bin/sh
 
+# -*- encoding: utf-8 -*-
+'''
+@File        :   process_single_disp.sh
+@Time        :   2025/01/03 22:40:54
+@Author      :   Haiyang Liao
+@Affiliation :   Nanjing University (NJU)
+@Contact     :   haiyangliao@smail.nju.edu.cn
+@Description :   This script is modified based on the work from Dr. R. B. Herrmann's "Computer Programs in Seismology" (Version 3.30, last updated Apr-25-2024). The original programs can be downloaded from: 
+                  http://www.eas.slu.edu/eqc/eqc_cps/CPS330.html
+'''
+
 # clean up
 surf96 39
 

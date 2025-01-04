@@ -1,6 +1,14 @@
-# ----------------------------------------------------------------------------------
-# Importing libraries
-# ----------------------------------------------------------------------------------
+
+# -*- encoding: utf-8 -*-
+'''
+@File        :   1_dispersion_calculation_array_run.py
+@Time        :   2025/01/03 22:37:04
+@Author      :   Haiyang Liao
+@Affiliation :   Nanjing University (NJU)
+@Contact     :   haiyangliao@smail.nju.edu.cn
+@Description :   this script is based on Dr. Zhenghong Song's work: https://gitee.com/gemini_lh/surfacewave-c3/tree/master/surfacewaveC3
+'''
+
 import os
 import sys
 import matplotlib
@@ -17,8 +25,6 @@ from torch import nn
 import torch.nn.functional as F
 import pandas as pd
 import time
-
-
 
 # ----------------------------------------------------------------------------------
 # Loading functions
@@ -38,9 +44,6 @@ def radon_transform_obs(seismo_v1, dt, x, vmin=100, vmax=1500, fmin=1, fmax=20, 
     uxt = uxt.T
     m = tranum
     nn0 = poinum
-
-
-
     ccn = int((1.0 / df / dt - 1 - nn0) + 1)
     zeros1 = np.zeros((m, ccn))
     uxt_m = uxt.shape[0]
@@ -91,8 +94,6 @@ def radon_transform_obs(seismo_v1, dt, x, vmin=100, vmax=1500, fmin=1, fmax=20, 
         ml[:, luoi] /= np.max(ml[:, luoi])
     ml = np.abs(ml[:, lf:nf])
     return ml
-
-
 def get_file_list(basis_dir="./", begin="", end=""):
 	path_list = os.listdir(basis_dir)
 	list_final = []
@@ -475,9 +476,6 @@ def denoising(data, dx, dt, iter0=5, mutev1=[], mutev2=[], source_tlag=0):
         data = dd
         data_f[:, :, :, kk] = dd
     return data
-
-
-
 # Function to convert SEGY data to numpy
 def sgy2numpy(filename, ch1=0, ch2=0):
     with segyio.open(filename, ignore_geometry=True) as segyfile:
@@ -486,7 +484,6 @@ def sgy2numpy(filename, ch1=0, ch2=0):
         else:
             data = np.array(segyfile.trace.raw[ch1:ch2])
     return data.T
-
 # Cross-correlation function for all channels
 def cc_all(data):
     a, b = data.shape
@@ -494,7 +491,6 @@ def cc_all(data):
     data = data.repeat((a, 1)).view(a, a, -1).permute((1, 0, 2))
     re = cal_cc(base, data)
     return re
-
 # Calculate cross-correlation
 def cal_cc(data, tmp, step=1):
     tmf_num = tmp.shape[0]

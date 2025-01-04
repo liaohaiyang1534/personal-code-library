@@ -1,3 +1,13 @@
+# -*- encoding: utf-8 -*-
+'''
+@File        :   waveform_process_and_visual_of_sac.py
+@Time        :   2025/01/03 22:44:31
+@Author      :   Haiyang Liao
+@Affiliation :   Nanjing University (NJU)
+@Contact     :   haiyangliao@smail.nju.edu.cn
+'''
+
+
 from obspy import read
 import matplotlib.pyplot as plt
 import os

@@ -1,3 +1,12 @@
+# -*- encoding: utf-8 -*-
+'''
+@File        :   fk_analysis_and_plot.py
+@Time        :   2025/01/03 22:45:45
+@Author      :   Haiyang Liao
+@Affiliation :   Nanjing University (NJU)
+@Contact     :   haiyangliao@smail.nju.edu.cn
+'''
+
 import numpy as np
 import segyio
 from segyio import TraceField

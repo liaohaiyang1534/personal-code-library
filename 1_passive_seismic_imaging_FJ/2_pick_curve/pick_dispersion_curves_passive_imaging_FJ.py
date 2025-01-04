@@ -1,3 +1,14 @@
+# -*- encoding: utf-8 -*-
+'''
+@File        :   pick_dispersion_curves_passive_imaging_FJ.py
+@Time        :   2025/01/03 22:37:53
+@Author      :   Haiyang Liao
+@Affiliation :   Nanjing University (NJU)
+@Contact     :   haiyangliao@smail.nju.edu.cn
+@Description :   Script for processing dispersion curves, adapted from the work of ColinLii: https://github.com/ColinLii/PickDispersionCurves
+'''
+
+
 import os
 import h5py
 import tkinter

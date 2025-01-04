@@ -1,3 +1,13 @@
+# -*- encoding: utf-8 -*-
+'''
+@File        :   9_sweep_bandpass.py
+@Time        :   2025/01/03 22:52:40
+@Author      :   Haiyang Liao
+@Affiliation :   Nanjing University (NJU)
+@Contact     :   haiyangliao@smail.nju.edu.cn
+'''
+
+
 import segyio
 import numpy as np
 from scipy.signal import butter, filtfilt

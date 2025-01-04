@@ -1,3 +1,20 @@
+# -*- encoding: utf-8 -*-
+'''
+@File        :   inversion.py
+@Time        :   2025/01/03 22:41:35
+@Author      :   Haiyang Liao
+@Affiliation :   Nanjing University (NJU)
+@Contact     :   haiyangliao@smail.nju.edu.cn
+@Description :   This script uses the 'evodcinv' package to perform surface wave dispersion curve inversion using evolutionary algorithms.
+                 The inversion is applied to phase velocity dispersion data, specifically for Rayleigh waves. The model is constructed 
+                 using multiple layers with specified boundaries for thickness and S-wave velocity. The evolutionary algorithm (CPOS) 
+                 is used to optimize the model parameters. The script processes input dispersion data, performs inversion, saves the 
+                 results, and generates graphical outputs of the best model fit and comparison with the true data.
+'''
+
+from evodcinv import EarthModel, Layer, Curve
+from evodcinv import factory
+
 import matplotlib
 matplotlib.use('Agg')
 import numpy as np
@@ -9,12 +26,10 @@ from mpl_toolkits.axes_grid1.inset_locator import inset_axes
 from matplotlib.font_manager import FontProperties, fontManager
 from matplotlib.ticker import FormatStrFormatter, MultipleLocator
 from disba import PhaseDispersion, depthplot
-from evodcinv import EarthModel, Layer, Curve
 import evodcinv
 import sys
 import os
 from datetime import datetime
-from evodcinv import factory
 
 # ----------------------------------------------------------------------------------
 # Font settings

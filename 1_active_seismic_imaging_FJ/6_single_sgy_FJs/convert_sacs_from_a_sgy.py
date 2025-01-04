@@ -1,3 +1,13 @@
+# -*- encoding: utf-8 -*-
+'''
+@File        :   convert_sacs_from_a_sgy.py
+@Time        :   2025/01/03 22:33:41
+@Author      :   Haiyang Liao
+@Affiliation :   Nanjing University (NJU)
+@Contact     :   haiyangliao@smail.nju.edu.cn
+'''
+
+
 import segyio
 from obspy import Trace, UTCDateTime
 import os

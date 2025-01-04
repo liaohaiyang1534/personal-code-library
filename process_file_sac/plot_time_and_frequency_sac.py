@@ -1,3 +1,13 @@
+# -*- encoding: utf-8 -*-
+'''
+@File        :   plot_time_and_frequency_sac.py
+@Time        :   2025/01/03 22:43:59
+@Author      :   Haiyang Liao
+@Affiliation :   Nanjing University (NJU)
+@Contact     :   haiyangliao@smail.nju.edu.cn
+'''
+
+
 import os
 import numpy as np
 import matplotlib.pyplot as plt

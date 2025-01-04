@@ -1,3 +1,13 @@
+# -*- encoding: utf-8 -*-
+'''
+@File        :   8_plot_vel_windows_with_sgy_2d_data.py
+@Time        :   2025/01/03 22:52:35
+@Author      :   Haiyang Liao
+@Affiliation :   Nanjing University (NJU)
+@Contact     :   haiyangliao@smail.nju.edu.cn
+'''
+
+
 import sys
 import segyio
 import numpy as np

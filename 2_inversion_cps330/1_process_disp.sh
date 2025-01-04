@@ -1,5 +1,15 @@
 #!/bin/bash
 
+# -*- encoding: utf-8 -*-
+'''
+@File        :   1_process_disp.sh
+@Time        :   2025/01/03 22:38:11
+@Author      :   Haiyang Liao
+@Affiliation :   Nanjing University (NJU)
+@Contact     :   haiyangliao@smail.nju.edu.cn
+'''
+
+
 # Check if an argument is provided
 if [ "$#" -ne 1 ]; then
     echo "Usage: $0 <input_file>"

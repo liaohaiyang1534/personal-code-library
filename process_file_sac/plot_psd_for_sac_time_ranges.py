@@ -1,3 +1,13 @@
+# -*- encoding: utf-8 -*-
+'''
+@File        :   plot_psd_for_sac_time_ranges.py
+@Time        :   2025/01/03 22:43:36
+@Author      :   Haiyang Liao
+@Affiliation :   Nanjing University (NJU)
+@Contact     :   haiyangliao@smail.nju.edu.cn
+'''
+
+
 import os
 import matplotlib.pyplot as plt
 import numpy as np

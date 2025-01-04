@@ -1,3 +1,13 @@
+# -*- encoding: utf-8 -*-
+'''
+@File        :   NOT USED FOR NOW - shot_time_match.py
+@Time        :   2025/01/03 22:31:58
+@Author      :   Haiyang Liao
+@Affiliation :   Nanjing University (NJU)
+@Contact     :   haiyangliao@smail.nju.edu.cn
+'''
+
+
 import re
 import shutil
 import os

@@ -1,3 +1,13 @@
+# -*- encoding: utf-8 -*-
+'''
+@File        :   1_sweep_to_pulse_batch_processing_15_previous_correlation_code.py
+@Time        :   2025/01/03 22:51:37
+@Author      :   Haiyang Liao
+@Affiliation :   Nanjing University (NJU)
+@Contact     :   haiyangliao@smail.nju.edu.cn
+'''
+
+
 import segyio
 import numpy as np
 import shutil

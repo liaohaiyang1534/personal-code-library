@@ -1,3 +1,13 @@
+# -*- encoding: utf-8 -*-
+'''
+@File        :   batch_pick_dispersion_curves_passive_imaging_FJ.py
+@Time        :   2025/01/03 22:37:48
+@Author      :   Haiyang Liao
+@Affiliation :   Nanjing University (NJU)
+@Contact     :   haiyangliao@smail.nju.edu.cn
+'''
+
+
 import os
 import glob
 import subprocess

@@ -1,3 +1,13 @@
+# -*- encoding: utf-8 -*-
+'''
+@File        :   7_sweep_sgy_trace_add_GroupX.py
+@Time        :   2025/01/03 22:52:18
+@Author      :   Haiyang Liao
+@Affiliation :   Nanjing University (NJU)
+@Contact     :   haiyangliao@smail.nju.edu.cn
+'''
+
+
 import os
 import segyio
 from segyio import TraceField

@@ -1,4 +1,15 @@
 #!/bin/bash
+
+# -*- encoding: utf-8 -*-
+'''
+@File        :   RUN_THIS_process_inversion_batch_processing.sh
+@Time        :   2025/01/03 22:41:02
+@Author      :   Haiyang Liao
+@Affiliation :   Nanjing University (NJU)
+@Contact     :   haiyangliao@smail.nju.edu.cn
+'''
+
+
 set -x
 
 # Currently only supports inversion of Rayleigh wave fundamental mode dispersion curves.
@@ -6,6 +17,7 @@ set -x
 
 # Since some dispersion curve inversions may not always run successfully and could hang,
 # set a timeout to skip to the next curve if the inversion exceeds this time.
+
 timeout_duration=60s  # Set timeout duration to 60 seconds
 
 curve_dir="./curve_input"

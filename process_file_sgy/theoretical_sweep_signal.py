@@ -1,3 +1,13 @@
+# -*- encoding: utf-8 -*-
+'''
+@File        :   theoretical_sweep_signal.py
+@Time        :   2025/01/03 22:51:29
+@Author      :   Haiyang Liao
+@Affiliation :   Nanjing University (NJU)
+@Contact     :   haiyangliao@smail.nju.edu.cn
+'''
+
+
 import numpy as np
 from scipy.signal import chirp
 import matplotlib.pyplot as plt

@@ -1,4 +1,15 @@
 #!/bin/bash
+
+# -*- encoding: utf-8 -*-
+'''
+@File        :   3_process_single.sh
+@Time        :   2025/01/03 22:40:25
+@Author      :   Haiyang Liao
+@Affiliation :   Nanjing University (NJU)
+@Contact     :   haiyangliao@smail.nju.edu.cn
+'''
+
+
 set -x
 
 script_to_run="./process_single_disp.sh"  # Script to run
