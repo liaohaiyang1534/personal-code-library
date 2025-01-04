@@ -7,8 +7,7 @@
 @Author      :   Haiyang Liao
 @Affiliation :   Nanjing University (NJU)
 @Contact     :   haiyangliao@smail.nju.edu.cn
-@Description :   This script is modified based on the work from Dr. R. B. Herrmann's "Computer Programs in Seismology" (Version 3.30, last updated Apr-25-2024). The original programs can be downloaded from: 
-                  http://www.eas.slu.edu/eqc/eqc_cps/CPS330.html
+@Description :   This script is modified based on the work from Dr. R. B. Herrmann "Computer Programs in Seismology" (Version 3.30, last updated Apr-25-2024). The original programs can be downloaded from: http://www.eas.slu.edu/eqc/eqc_cps/CPS330.html
 '''
 
 # clean up
@@ -42,9 +41,5 @@ plotnps -EPS -K -F7 -W10 < IT.PLT > figsrf2.eps
 
 convert figsrf1.eps -background white -flatten -define png:color-type=2 figsrf1.png
 convert figsrf2.eps -background white -flatten -define png:color-type=2 figsrf2.png
-
-
-
-
 
 

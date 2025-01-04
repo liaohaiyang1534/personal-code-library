@@ -5,10 +5,12 @@ This repository contains scripts for active seismic imaging using Distributed Ac
 ## Experimental Setup
 
 1. **Fiber-optic cables preparation**: Ensure fiber-optic cables are ready and perform tap tests.
-2. **Active sources**: Use active sources (e.g., hammer or other sources) to create surface wave signals along the fiber-optic cable, with your own shot offsets.
-3. **Record shot information**: Note the shot number and the time of each shot.
+2. **Active seismic sources**: Use active sources (e.g., hammer or other sources) to create surface wave signals along the fiber-optic cable, with your own shot offsets. Set reasonable gauge length and channel spacing.
+3. **Record active shot information**: Note the shot number and the time of each shot.
 4. **Data conversion**: Convert `.dat` files to `.sgy` file format.
 5. **Data processing**: Follow the data processing workflow to quickly process data from active source experiments.
+
+
 
 ## Data Processing Workflow
 
@@ -20,7 +22,7 @@ This repository contains scripts for active seismic imaging using Distributed Ac
 6. **Dispersion analysis**: Process single SEG-Y files for dispersion analysis (`6_single_sgy_FJs`).
 7. **Pick dispersion curves**: Manually or automatically pick dispersion curves (`7_pick_curve`).
 
-## Folder Structure
+## Repository Structure
 
 ### `1_extract_specific_traces`
 - **`batch_extract_specific_traces.py`**: Takes a folder as input, retrieves SEG-Y file information, and passes it to `extract_specific_traces.py`.
