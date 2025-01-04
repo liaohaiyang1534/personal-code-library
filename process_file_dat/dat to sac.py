@@ -2,12 +2,10 @@
 '''
 @File        :   dat to sac.py
 @Time        :   2025/01/03 22:43:00
-@Author      :   Haiyang Liao & Zhengyu Qian
+@Author      :   Zhengyu Qian & Haiyang Liao
 @Affiliation :   Nanjing University (NJU)
 @Contact     :   haiyangliao@smail.nju.edu.cn
 '''
-
-
 
 import sys
 import os
@@ -17,9 +15,11 @@ import shutil
 import threading
 import multiprocessing  # To determine the number of available CPU cores
 
-input_dir = r"F:\diff_distance_to_cavity\noise_data\raw_data"  # Input directory
+# Input directory
+input_dir = r"F:\diff_distance_to_cavity\noise_data\raw_data"
+# Output directory
+output_dir = r"F:\diff_distance_to_cavity\noise_data\processed_sac"
 
-output_dir = r"F:\diff_distance_to_cavity\noise_data\processed_sac"  # Output directory
 if not os.path.exists(output_dir):
     os.makedirs(output_dir)
 
@@ -58,7 +58,7 @@ def process_files(file_list):
                 for channel_idx in range(num_channels):
                     channel_data = reshaped_data[channel_idx, :]
                     channel_number = f"{channel_idx + 1:04}"  # Format as 4-digit number
-                    sac_filename = f"{file_name[:-12]}{file_name[-8:-4]}{channel_number}.sac"
+                    sac_filename = f"{file_name[:19]}{file_name[-8:-4]}{channel_number}.sac"
                     sac_file_path = os.path.join(file_output_dir, sac_filename)
                     
                     trace = obspy.Trace()
