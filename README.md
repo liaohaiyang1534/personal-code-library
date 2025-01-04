@@ -1,47 +1,35 @@
 # Personal Code Library
 
-This repository serves as a comprehensive collection of Python scripts and tools for seismic data processing, inversion, and imaging. Each subfolder represents a distinct workflow or set of utilities designed for specific tasks in seismic data analysis.
-
----
+This repository contains Python scripts and tools for seismic data processing, inversion, and imaging. Each subfolder represents a specific workflow or utility for seismic data analysis.
 
 ## Repository Structure
 
 ### `1_active_seismic_imaging_FJ`
-Scripts and workflows for **active seismic imaging**, specifically focusing on frequency-domain and spatial-domain analysis. Includes tools for generating seismic images using active sources.
+Tools for **active seismic imaging** focused on frequency-domain and spatial-domain analysis.
 
 ### `2_passive_seismic_imaging_frequency-Bessel_FJ`
-Contains tools for **passive seismic imaging** using frequency-domain Bessel function analysis. This workflow is designed for applications in seismic noise analysis and passive imaging.
+Tools for **passive seismic imaging** using frequency-domain Bessel function analysis.
 
 ### `2_passive_seismic_imaging_three_station_C3`
-Implements **three-station cross-correlation (C3)** techniques for passive seismic imaging. Useful for extracting seismic velocity and analyzing subsurface structure using passive data.
+Implements **three-station cross-correlation (C3)** for passive seismic imaging.
 
 ### `2_passive_seismic_imaging_binstack_and_fkSNR-slecting`
-This folder focuses on **bin stacking and FK-based SNR selection** for passive seismic data. Includes advanced methods for improving the signal-to-noise ratio in passive imaging workflows.
+Methods for **bin stacking and FK-based SNR selection** to improve passive seismic data quality.
 
 ### `3_inversion_cps330`
-Scripts related to **seismic inversion** using CPS330 techniques. These scripts likely focus on modeling subsurface properties using seismic data.
+Scripts for **seismic inversion** using CPS330 for subsurface modeling.
 
 ### `3_inversion_evodcinv`
-Contains utilities for **seismic inversion** using the EvodcInv framework. This folder may involve parameter estimation and velocity model refinement for inversion.
+Tools for **seismic inversion** using the EvodcInv framework for parameter estimation and velocity model refinement.
 
 ### `4_process_file_sgy`
-A collection of tools for processing **SEG-Y files**, including reading, writing, and applying various processing steps such as filtering, correlation, and time slicing. 
-
-> For more details, check the corresponding `README.md` in the folder.
+Scripts for processing **SEG-Y files**, including filtering, correlation, and time slicing.
 
 ### `4_process_file_sac`
-Scripts for processing **SAC (Seismic Analysis Code) files**, including trace normalization, waveform filtering, and visualization.
+Scripts for processing **SAC files**, including normalization, filtering, and visualization.
 
 ### `4_process_file_dat`
-Processing utilities for seismic data stored in **DAT format**, including file conversion and preprocessing steps.
+Tools for processing **DAT format** seismic data, including file conversion and preprocessing.
 
 ### `5_process_sweep_signal`
-A comprehensive toolkit for processing **sweep signals** in SEG-Y files. Includes functionalities such as:
-- Correlation-based trace extraction
-- Bandpass and velocity filtering
-- FK filtering and wavelet-based noise reduction
-- SEG-Y header manipulation and trace reversal
-
-> Detailed documentation for this folder is available in its own `README.md`.
-
----
+Toolkit for processing **sweep signals** in SEG-Y files, including trace extraction, filtering, and noise reduction.
